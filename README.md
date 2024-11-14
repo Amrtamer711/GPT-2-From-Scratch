@@ -11,3 +11,8 @@ This repository contains a custom implementation of a GPT model, complete with t
 - **Inference Pipeline**: Generates text using top-k sampling.
 - **Mixed Precision Training**: Optionally use torch.autocast for FP16 or BF16 precision.
 - **Device Compatibility**: Automatically selects between CUDA, MPS, or CPU.
+
+# Current Work:
+- **Scheduler and Optimizer Enhancements**: A learning rate scheduler and advanced optimizer settings are not yet implemented.
+- **Gradient Accumulation**: Not yet integrated for large batch sizes across GPUs.
+- **Distributed Training**: DDP and multi-node setups are planned but not yet supported.
