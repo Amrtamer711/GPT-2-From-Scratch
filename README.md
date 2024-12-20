@@ -34,17 +34,6 @@ This repository contains a **ground-up implementation** of the GPT-2 architectur
 
 ![image](https://github.com/user-attachments/assets/9825232c-e338-4d6d-8197-ee2244df6a19)
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/amrtamer711/gpt-2-from-scratch.git
-   cd gpt-2-from-scratch
-
-2. Install necessary libraries
-   ```bash
-   pip install -r requirements.txt
-
 ## Model Implementation
 The entire GPT-2 architecture, including:
 
@@ -57,6 +46,17 @@ The entire GPT-2 architecture, including:
 
 This is implemented in ```model.py``` and ```train.py```. This was done without relying on pre-built libraries like Hugging Face's transformers.
 
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/amrtamer711/gpt-2-from-scratch.git
+   cd gpt-2-from-scratch
+
+2. Install necessary libraries
+   ```bash
+   pip install -r requirements.txt
+   
 ## Dataset Preparation
 
 To prepare the FineWebEdu Dataset, execute:
