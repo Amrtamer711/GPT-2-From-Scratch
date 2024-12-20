@@ -53,7 +53,7 @@ The entire GPT-2 architecture, including:
 - **Layer normalization**
 - **Training loop with gradient accumulation, mixed precision, and distributed training**
 
-This is implemented in model.py and train.py. This was done without relying on pre-built libraries like Hugging Face's transformers.
+This is implemented in ```model.py``` and ```train.py```. This was done without relying on pre-built libraries like Hugging Face's transformers.
 
 ## Training
 To train the model on FineWebEdu from scratch, execute:
