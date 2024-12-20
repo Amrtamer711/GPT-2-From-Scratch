@@ -84,3 +84,8 @@ python train.py \
 3. Ground-Up Approach:
 - Everything from model architecture to training pipeline was implemented from scratch.
 
+## Possible Future Work
+- Train model for longer, more aggresively and with larger dataset as this was a faithful replication of GPT 2 and seems to have much more possibility for performance imporvement.
+- Train larger versions of the GPT-2 model (e.g., 350M, 774M, 1558M).
+- Extend evaluation to more diverse datasets for broader validation.
+- Optimize the custom implementation for real-time inference applications with front end.
