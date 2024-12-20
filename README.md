@@ -38,7 +38,7 @@ This repository contains a **ground-up implementation** of the GPT-2 architectur
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/scratch-gpt2.git
+   git clone https://github.com/amrtamer711/gpt-2-from-scratch.git
    cd scratch-gpt2
 
 2. Install necessary libraries
