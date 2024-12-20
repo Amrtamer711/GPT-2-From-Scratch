@@ -62,13 +62,18 @@ To train the model on FineWebEdu from scratch, execute:
 
 ```bash
 python train.py \
-  --dataset-path ./data/finewebedu/ \
-  --model-size 124M \
-  --batch-size 64 \
-  --learning-rate 6e-4 \
-  --max-steps 19000 \
-  --seed 42 \
-  --num-gpus 8
+    --path "/path/to/data" \
+    --max_steps 20000 \
+    --warmup_steps 1000 \
+    --max_lr 6e-4 \
+    --min_lr 6e-5 \
+    --batch_size_per_device 128 \
+    --total_batch_size 524288 \
+    --eval_step_interval 500 \
+    --eval_max_steps 50 \
+    --save_step 5000 \
+    --seed 42 \
+    --fp16
 ```
 
 ## Key Features
