@@ -62,6 +62,7 @@ This is implemented in ```model.py``` and ```train.py```. This was done without 
 To prepare the FineWebEdu Dataset, execute:
   ```bash
   python fineweb.py
+```
 
 ### Notes:
 - This may take a while to execute as this dependent on the number of cores on your machine.
