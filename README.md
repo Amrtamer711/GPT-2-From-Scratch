@@ -89,14 +89,14 @@ torchrun --standalone --nproc_per_node=x train.py \
 where x in ```--nproc_per_node=x``` should be the number of GPUs you have available. 
 
 ## Results Analysis
-To evaluate the model and comare it to the original versions of GPT 2 and GPT 3, run the ```benchmark.ipynb``` notebook
-
-## Model Generation
-
+To evaluate the model and comare it to the original versions of GPT 2 and GPT 3, run the ```benchmark.ipynb``` notebook.
 
 ### Notes:
 - These were the exact parameters I used to produce these results, in order to replicate the conditions of GPT 2, but it seems that slightly more aggressive training would produce better results.
 - Modify the batch size per device until maximum untilization of your GPUs.
+
+## Model Generation
+To generate from the model, run  ```generate.ipynb``` where you can modify the input text.
 
 ## Key Features
 1. Custom Data Loader:
