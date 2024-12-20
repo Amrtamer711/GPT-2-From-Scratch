@@ -61,7 +61,7 @@ This is implemented in ```model.py``` and ```train.py```. This was done without 
 To train the model on FineWebEdu from scratch, execute:
 
 ```bash
-torchrun --standalone --nproc_per_node=8 train.py \
+torchrun --standalone --nproc_per_node=x train.py \
     --path "/path/to/data" \
     --max_steps 19073 \
     --warmup_steps 715 \
@@ -75,8 +75,10 @@ torchrun --standalone --nproc_per_node=8 train.py \
     --seed 1337 \
     --fp16
 ```
-
-Note: These were the exact parameters I used to produce these results, in order to replicate the conditions of GPT 2, but it seems that slightly more aggressive training would produce better results.
+where x in ```--nproc_per_node=x``` should be the number of GPUs you have available. 
+Notes:
+- These were the exact parameters I used to produce these results, in order to replicate the conditions of GPT 2, but it seems that slightly more aggressive training would produce better results.
+- Modify the batch size per device until maximum untilization of your GPUs.
 
 ## Key Features
 1. Custom Data Loader:
