@@ -22,7 +22,7 @@ This repository contains a **ground-up implementation** of the GPT-2 architectur
 | Model                  | Accuracy (%) |
 |------------------------|--------------|
 | Original GPT-2 (124M)  | 29.4         |
-| My GPT-2 (This Work) | **30.4**      |
+| My GPT-2 (124M) | **30.4**      |
 
 ### FineWebEdu Validation Loss
 | Steps  | Validation Loss |
