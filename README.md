@@ -56,3 +56,31 @@ The entire GPT-2 architecture, including:
 - **Training loop with gradient accumulation, mixed precision, and distributed training**
 
 This is implemented in model.py and train.py. This was done without relying on pre-built libraries like Hugging Face's transformers.
+
+Training
+To train the model on FineWebEdu from scratch, execute:
+
+bash
+Copy code
+python train.py \
+  --dataset-path ./data/finewebedu/ \
+  --model-size 124M \
+  --batch-size 64 \
+  --learning-rate 6e-4 \
+  --max-steps 19000 \
+  --seed 42 \
+  --num-gpus 8
+
+## Key Features
+1. Custom Data Loader:
+- Supports large-scale datasets split into shards.
+- Randomly shuffles shards and data with deterministic seeds for reproducibility.
+- Distributes data across GPUs effectively for multi-GPU training.
+2. Optimizations:
+- Mixed precision training (torch.autocast) for faster training.
+- Cosine learning rate scheduler with warmup.
+- Gradient clipping for stability.
+- Distributed data parallel (DDP) for multi-GPU scalability.
+3. Ground-Up Approach:
+- Everything from tokenization to the training pipeline was implemented from scratch.
+
