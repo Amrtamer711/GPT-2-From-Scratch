@@ -63,11 +63,11 @@ To train the model on FineWebEdu from scratch, execute:
 ```bash
 python train.py \
     --path "/path/to/data" \
-    --max_steps 20000 \
-    --warmup_steps 1000 \
+    --max_steps 19073 \
+    --warmup_steps 715 \
     --max_lr 6e-4 \
     --min_lr 6e-5 \
-    --batch_size_per_device 128 \
+    --batch_size_per_device 64 \
     --total_batch_size 524288 \
     --eval_step_interval 500 \
     --eval_max_steps 50 \
@@ -76,12 +76,15 @@ python train.py \
     --fp16
 ```
 
+Note: These were the exact parameters I used to produce these results, in order to replicate the conditions of GPT 2, but it seems that slightly more aggressive training would produce better results.
+
 ## Key Features
 1. Custom Data Loader:
   - Supports large-scale datasets split into shards.
   - Randomly shuffles shards and data with deterministic seeds for reproducibility.
   - Distributes data across GPUs effectively for multi-GPU training.
 2. Optimizations:
+- Optional Fused AdamW and Flash Attention for more efficient training.
 - Mixed precision training (torch.autocast) for faster training.
 - Cosine learning rate scheduler with warmup.
 - Gradient clipping for stability.
