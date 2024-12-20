@@ -1,4 +1,5 @@
-#GPT 2 Implementation from Scratch
+# GPT 2 Implementation from Scratch
+
 This repository contains the implementation and fine-tuning of a GPT-2 model trained on the **FineWebEdu** dataset and evaluated on both the training set and external benchmarks like **HellaSwag**. By leveraging modern training methodologies and optimization techniques, this fine-tuned GPT-2 outperformed the original GPT-2 model, particularly on **HellaSwag**.
 
 ## Highlights
