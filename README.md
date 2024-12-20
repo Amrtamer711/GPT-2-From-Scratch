@@ -85,7 +85,7 @@ Note: These were the exact parameters I used to produce these results, in order 
   - Distributes data across GPUs effectively for multi-GPU training.
 2. Optimizations:
 - Optional Fused AdamW and Flash Attention for more efficient training.
-- Mixed precision training (torch.autocast) for faster training.
+- Mixed precision training for faster training.
 - Cosine learning rate scheduler with warmup.
 - Gradient clipping for stability.
 - Distributed data parallel (DDP) for multi-GPU scalability.
