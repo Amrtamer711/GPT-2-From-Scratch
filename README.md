@@ -1,5 +1,7 @@
 # GPT 2 Implementation from Scratch
 
+![image](https://github.com/user-attachments/assets/e9b7093d-f262-492a-bfd7-d6b25fbd5e50)
+
 
 This repository contains a **ground-up implementation** of the GPT-2 architecture, fully built from scratch. The model was trained on the **FineWebEdu** dataset and evaluated on **HellaSwag**, achieving better-than-original GPT-2 performance using modern training methodologies.
 
