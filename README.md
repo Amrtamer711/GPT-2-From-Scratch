@@ -69,10 +69,10 @@ python train.py \
     --min_lr 6e-5 \
     --batch_size_per_device 64 \
     --total_batch_size 524288 \
-    --eval_step_interval 500 \
-    --eval_max_steps 50 \
+    --eval_step_interval 250 \
+    --eval_max_steps 20 \
     --save_step 5000 \
-    --seed 42 \
+    --seed 1337 \
     --fp16
 ```
 
