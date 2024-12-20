@@ -32,8 +32,6 @@ This repository contains a **ground-up implementation** of the GPT-2 architectur
 | 10000   | 3.17            |
 | Final  | **3.07**         |
 
----
-
 ## Installation
 
 1. Clone the repository:
@@ -69,6 +67,7 @@ python train.py \
   --max-steps 19000 \
   --seed 42 \
   --num-gpus 8
+```
 
 ## Key Features
 1. Custom Data Loader:
