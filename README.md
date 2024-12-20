@@ -73,7 +73,7 @@ python train.py \
 
 ## Key Features
 1. Custom Data Loader:
-  - **Supports large-scale datasets split into shards.**
+  -- Supports large-scale datasets split into shards.
   - Randomly shuffles shards and data with deterministic seeds for reproducibility.
   - Distributes data across GPUs effectively for multi-GPU training.
 2. Optimizations:
@@ -82,5 +82,5 @@ python train.py \
 - Gradient clipping for stability.
 - Distributed data parallel (DDP) for multi-GPU scalability.
 3. Ground-Up Approach:
-- Everything from tokenization to the training pipeline was implemented from scratch.
+- Everything from model architecture to training pipeline was implemented from scratch.
 
