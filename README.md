@@ -76,7 +76,8 @@ torchrun --standalone --nproc_per_node=x train.py \
     --fp16
 ```
 where x in ```--nproc_per_node=x``` should be the number of GPUs you have available. 
-Notes:
+
+### Notes:
 - These were the exact parameters I used to produce these results, in order to replicate the conditions of GPT 2, but it seems that slightly more aggressive training would produce better results.
 - Modify the batch size per device until maximum untilization of your GPUs.
 
