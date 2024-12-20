@@ -32,6 +32,8 @@ This repository contains a **ground-up implementation** of the GPT-2 architectur
 | 10000   | 3.17            |
 | Final  | **3.07**         |
 
+![image](https://github.com/user-attachments/assets/c4e7db53-dc99-4e99-9902-7bccb6dbef0c)
+
 ## Installation
 
 1. Clone the repository:
