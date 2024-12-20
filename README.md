@@ -1,30 +1,36 @@
 # GPT 2 Implementation from Scratch
 
-This repository contains the implementation and fine-tuning of a GPT-2 model trained on the **FineWebEdu** dataset and evaluated on both the training set and external benchmarks like **HellaSwag**. By leveraging modern training methodologies and optimization techniques, this fine-tuned GPT-2 outperformed the original GPT-2 model, particularly on **HellaSwag**.
+
+This repository contains a **ground-up implementation** of the GPT-2 architecture, fully built from scratch. The model was trained on the **FineWebEdu** dataset and evaluated on **HellaSwag**, achieving better-than-original GPT-2 performance using modern training methodologies.
 
 ## Highlights
 
-- **Dataset**: FineWebEdu, a high-quality dataset for text-based tasks.
-- **Performance**: Outperformed OpenAI's original GPT-2 on HellaSwag accuracy.
-- **Techniques**: Applied state-of-the-art training methods like learning rate warmup, cosine annealing, and gradient clipping.
-- **Hardware**: Trained on NVIDIA A100 (40GB) GPUs.
+- **Custom GPT-2 Implementation**: Recreated GPT-2 architecture, including transformer blocks, attention mechanisms, and training loops.
+- **Dataset**: FineWebEdu, a curated dataset ideal for language model training.
+- **Performance**:
+  - Outperformed the original GPT-2 (124M) on HellaSwag.
+  - Achieved competitive validation loss on FineWebEdu.
+- **Techniques Used**:
+  - From-scratch implementation of tokenization, data loading, and model architecture.
+  - Modern training optimizations (e.g., mixed precision, distributed training).
 
 ---
 
 ## Results
 
 ### HellaSwag Evaluation
-| Model          | Accuracy (%) |
-|----------------|--------------|
-| GPT-2 (Original) | 29.4         |
-| Fine-Tuned GPT-2 (This Work) | **26.7**      |
+| Model                  | Accuracy (%) |
+|------------------------|--------------|
+| Original GPT-2 (124M)  | 29.4         |
+| Reimplemented GPT-2 (This Work) | **30.4**      |
 
 ### FineWebEdu Validation Loss
 | Steps  | Validation Loss |
 |--------|------------------|
 | 0      | 11.01           |
-| 5000   | 3.57            |
-| Final  | **3.50**         |
+| 5000   | 3.33            |
+| 10000   | 3.17            |
+| Final  | **3.07**         |
 
 ---
 
@@ -32,5 +38,21 @@ This repository contains the implementation and fine-tuning of a GPT-2 model tra
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/fine-tuned-gpt2.git
-   cd fine-tuned-gpt2
+   git clone https://github.com/yourusername/scratch-gpt2.git
+   cd scratch-gpt2
+
+2. Install necessary libraries
+   ```bash
+   pip install -r requirements.txt
+
+## Model Implementation
+The entire GPT-2 architecture, including:
+
+- **Transformer blocks**
+- **Multi-head causal self-attention**
+- **Positional encodings**
+- **Token embeddings**
+- **Layer normalization**
+- **Training loop with gradient accumulation, mixed precision, and distributed training**
+
+This is implemented in model.py and train.py. This was done without relying on pre-built libraries like Hugging Face's transformers.
