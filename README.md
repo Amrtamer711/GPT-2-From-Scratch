@@ -57,11 +57,10 @@ The entire GPT-2 architecture, including:
 
 This is implemented in model.py and train.py. This was done without relying on pre-built libraries like Hugging Face's transformers.
 
-Training
+## Training
 To train the model on FineWebEdu from scratch, execute:
 
-bash
-Copy code
+```bash
 python train.py \
   --dataset-path ./data/finewebedu/ \
   --model-size 124M \
