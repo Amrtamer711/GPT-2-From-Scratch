@@ -61,7 +61,7 @@ This is implemented in ```model.py``` and ```train.py```. This was done without 
 To train the model on FineWebEdu from scratch, execute:
 
 ```bash
-python train.py \
+torchrun --standalone --nproc_per_node=8 train.py \
     --path "/path/to/data" \
     --max_steps 19073 \
     --warmup_steps 715 \
