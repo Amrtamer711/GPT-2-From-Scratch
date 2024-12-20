@@ -16,8 +16,6 @@ This repository contains a **ground-up implementation** of the GPT-2 architectur
   - From-scratch implementation of tokenization, data loading, and model architecture.
   - Modern training optimizations (e.g., mixed precision, distributed training).
 
----
-
 ## Results
 
 ### HellaSwag Evaluation
