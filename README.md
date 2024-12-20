@@ -57,6 +57,17 @@ The entire GPT-2 architecture, including:
 
 This is implemented in ```model.py``` and ```train.py```. This was done without relying on pre-built libraries like Hugging Face's transformers.
 
+## Dataset Preparation
+
+To prepare the FineWebEdu Dataset, execute:
+```bash
+python fineweb.py
+```
+
+### Notes:
+- This may take a while to execute as this dependent on the number of cores on your machine.
+- It will produce 100 shards of the dataset and will require approx. 20 GB of memory to be stored.
+
 ## Training
 To train the model on FineWebEdu from scratch, execute:
 
