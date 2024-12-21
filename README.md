@@ -100,17 +100,17 @@ To generate from the model, run  ```generate.ipynb``` where you can modify the i
 
 ## Key Features
 1. Custom Data Loader:
-  - Supports large-scale datasets split into shards.
-  - Randomly shuffles shards and data with deterministic seeds for reproducibility.
-  - Distributes data across GPUs effectively for multi-GPU training.
+   - Supports large-scale datasets split into shards.
+   - Randomly shuffles shards and data with deterministic seeds for reproducibility.
+   - Distributes data across GPUs effectively for multi-GPU training.
 2. Optimizations:
-- Optional Fused AdamW and Flash Attention for more efficient training.
-- Mixed precision training for faster training.
-- Cosine learning rate scheduler with warmup.
-- Gradient clipping for stability.
-- Distributed data parallel (DDP) for multi-GPU scalability.
+   - Optional Fused AdamW and Flash Attention for more efficient training.
+   - Mixed precision training for faster training.
+   - Cosine learning rate scheduler with warmup.
+   - Gradient clipping for stability.
+   - Distributed data parallel (DDP) for multi-GPU scalability.
 3. Ground-Up Approach:
-- Everything from model architecture to training pipeline was implemented from scratch.
+   - Everything from model architecture to training pipeline was implemented from scratch.
 
 ## Possible Future Work
 - Train model for longer, more aggresively and with larger dataset as this was a faithful replication of GPT 2 and seems to have much more possibility for performance imporvement.
