@@ -96,10 +96,10 @@ where x in ```--nproc_per_node=x``` should be the number of GPUs you have availa
 To evaluate the model and compare it to the original versions of GPT 2 and GPT 3, run the ```benchmark.ipynb``` notebook. It will extract the latest log in the log file.
 
 ## Model Generation
-To generate from the model, run  ```generate.ipynb``` where you can modify the input text.
+To generate from the model, run  ```generate.ipynb``` where you can modify the input text. 
 
 ### Notes:
-- If you want to avoid having to train the model from scratch, one of the checkpoints can be found at this [link](https://drive.google.com/drive/folders/1zM2nJexlJu71-BMICRvJ2fAWrWFjo5Kn?usp=sharing).
+- If you want to avoid having to train the model from scratch, one of the checkpoints can be found at this [link](https://drive.google.com/drive/folders/1zM2nJexlJu71-BMICRvJ2fAWrWFjo5Kn?usp=sharing). Place the checkpoint in the log folder.
 
 ## Key Features
 1. Custom Data Loader:
