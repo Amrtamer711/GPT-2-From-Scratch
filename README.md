@@ -98,6 +98,9 @@ To evaluate the model and compare it to the original versions of GPT 2 and GPT 3
 ## Model Generation
 To generate from the model, run  ```generate.ipynb``` where you can modify the input text.
 
+### Notes:
+- If you want to avoid having to train, one of the checkpoints can be found at this link[https://drive.google.com/drive/folders/1zM2nJexlJu71-BMICRvJ2fAWrWFjo5Kn?usp=sharing]
+
 ## Key Features
 1. Custom Data Loader:
    - Supports large-scale datasets split into shards.
